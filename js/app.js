@@ -1,0 +1,5 @@
+$(function () {
+
+   Console.log("rabotaet!");
+
+});

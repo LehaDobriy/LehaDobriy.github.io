@@ -1,0 +1,7 @@
+@media (max-width: 1300px) {
+  /** header **/
+  .header__img {
+    margin-left: 50px; }
+  /** Intro **/
+  .intro__subtitle, .intro__title, .intro__text, .intro__btn {
+    margin-left: 50px; } }

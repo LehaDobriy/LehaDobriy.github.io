@@ -1,0 +1,7 @@
+@media (max-width: 525px) {
+  /** footer **/
+  .footer__menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; } }

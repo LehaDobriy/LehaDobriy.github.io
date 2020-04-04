@@ -1,0 +1,611 @@
+// Подключение шрифтов
+@import _fonts
+//Veriables
+@import _veriables
+//Reset
+@import _reset
+
+
+
+// Main blocks
+.container
+   max-width: 1170px
+   width: 100%
+   margin: 0 auto
+
+   padding: 0 15px
+
+.section
+   position: relative
+
+   margin: 140px 0
+
+.section--another
+   background-color: #fff9f8
+
+.inner
+   display: flex
+   justify-content: center
+   flex-direction: column
+   align-items: center
+
+.title
+   font-size: 42px
+   font-weight: 700
+   font-family: $rufina
+   color: $black_color
+
+   margin-bottom: 40px
+
+.text
+   font-size: 15px
+   font-weight: 300
+   text-align: center
+   line-height: 1.6
+
+   margin-bottom: 70px
+   padding: 0 140px
+
+
+/** Button **/
+.btn__rounding
+   position: relative
+   padding: 20px 40px
+
+   font-size: 13px
+   text-transform: uppercase
+   color: #fff
+   font-weight: 600
+   border: none
+   border-radius: 35px
+   transition: color .5s ease-in-out, background-color .5s ease-in-out
+   cursor: pointer
+
+   &:hover
+      color: $black_color
+      background-color: #fe6461
+      
+.btn--red
+   background-color: $red_color
+
+.btn--black
+   background-color: $black_color
+
+/** Header **/
+.header
+   width: 100%
+   height: 120px
+
+   position: absolute
+   top: 0
+   left: 0
+   z-index: 1
+
+.header__inner
+   display: flex
+   justify-content: space-between
+   align-items: center
+   margin: 20px 0
+
+.header__nav
+   margin-right: 35%
+
+.header__link
+   font-size: 14px
+   font-weight: 500
+   text-transform: uppercase
+   color: #263a41
+   text-decoration: none
+
+   &:not(:last-child)
+      margin-right: 50px
+
+/** Burger **/
+.burger
+   display: none
+   cursor: pointer
+   background: none
+   border: none
+
+   padding: 9px 2px
+   margin: 0 auto
+
+.burger__item
+   position: relative
+   
+   display: block
+   width: 30px
+   height: 2px
+   background-color: #000000
+   
+   font-size: 0
+   color: transparent   
+
+   &:before
+      content: ''
+      position: absolute
+
+      width: 100%
+      height: 100%
+      top: 10px
+      left: 0
+      z-index: 1
+      background-color: #000000
+
+   &:after
+      content: ''
+      position: absolute
+
+      width: 100%
+      height: 100%
+      top: -10px
+      left: 0
+      z-index: 1
+      background-color: #000000
+
+
+/** intro **/
+.intro
+   background: url('../img/header/leaf.png') no-repeat left center/12%
+   margin-top: 180px
+   margin-bottom: 100px
+
+.spa__img
+   position: absolute
+   width: 43%
+   top: 0
+   right: 0
+   z-index: -11
+
+.intro__img
+   display: block
+   width: 100%
+   height: auto
+
+.intro__content
+   width: 50%
+
+.intro__subtitle
+   display: block
+   margin-bottom: 20px
+   
+   font-family: $rufina
+   font-size: 15px
+   font-weight: 500
+   text-transform: uppercase
+   color: $red_color
+   letter-spacing: 1.5px
+
+.intro__title
+   margin-bottom: 20px
+
+   font-family: $rufina
+   font-size: 60px
+   font-weight: 700
+   color: $black_color
+   line-height: 75px
+
+.intro__text
+   margin-bottom: 50px
+
+   font-size: 15px
+   font-weight: 500
+
+.intro__btn
+   position: relative
+   padding: 25px 44px
+
+   font-size: 13px
+   text-transform: uppercase
+   color: #fff
+   font-weight: 600
+   border: none
+   background-color: $red_color
+   transition: background-color, color .5s ease-in-out
+   cursor: pointer
+
+   &:hover
+      color: $black_color
+      background-color: #fe6461
+   
+   &:after
+      content: "ᐳ"
+      padding-left: 10px      
+
+.intro__link
+   margin-left: 20px
+
+   font-size: 15px
+   font-weight: 500
+   text-decoration: none
+   color: #263a41
+
+   &:before
+     content: 'ᐅ'
+     display: inline-block
+     color:#000    
+
+     text-align: center
+     line-height: 44px
+    
+     width: 44px
+     height: 44px
+     margin-right: 10px
+
+     border-radius: 50%
+     background-color: #fcf5ee
+
+
+/** About **/
+.about__img1
+   // позиция относительно секции
+   position: absolute
+   top: 0
+   left: 13%
+
+   max-width: 160px
+
+.about__img2
+   // позиция относительно секции
+   position: absolute
+   top: 50%
+   right: 5%
+
+   transform: translateY(-50%)
+
+   max-width: 88px
+
+.about__img
+   width: 80px
+   height: 80px
+
+   margin-bottom: 40px
+
+.about__subtitle
+   font-size: 20px
+   text-transform: uppercase
+   font-weight: 500
+
+   margin-bottom: 40px
+ 
+
+/** Service **/
+.service
+   display: flex
+   
+   justify-content: space-between
+
+.service__item
+   position: relative
+
+   background-color: #fe6461
+   
+   &:not(:last-child)
+      margin-right: 5px
+   
+   &:hover .service__img
+      opacity: .3
+
+   &:hover .service__info
+      opacity: 1
+
+.service__img 		
+	display: block
+	max-width: 100%
+	height: auto 
+
+   transition: opacity .3s linear
+
+.service__info
+   display: flex
+   flex-direction: column
+   justify-content: center
+   align-items: center
+
+   position: absolute
+   width: 100%
+   height: 100%
+   top: 0
+   left: 0
+   z-index: 1
+   padding: 0 15px
+
+
+   color: #fff
+
+   opacity: 0
+   transition: opacity .3s linear
+
+.service__icon   
+   margin-bottom: 10px
+
+.service__title
+   font-family: $rufina
+   color: #ffffff
+   font-weight: 700
+   font-size: 22px 
+
+
+/** offer **/
+.offer__inner
+   display: flex
+   
+   justify-content: space-between
+   width: 100%
+
+.offer__card
+   display: flex
+   justify-content: center
+   
+   width: 33.333%
+   padding: 20px
+
+   text-align: center
+
+   border: 1px solid #e3e6ea
+
+   transition: box-shadow .5s linear
+
+   &:hover
+      box-shadow: 0 0 25px 2px #787478
+
+   &:not(:last-child)
+      margin-right: 30px
+
+.content img
+   width: 100%
+
+.card__img
+   width: 100%
+   height: auto
+   margin-bottom: 40px
+
+.card__title
+   font-size: 22px
+   font-weight: 700
+   color: $black_color
+   font-family: $rufina
+
+   margin-bottom: 30px
+
+.card__text
+   font-family: serif
+   font-size: 14px
+   font-weight: 300
+
+   padding: 0 20px 
+   margin-bottom: 50px
+
+/** Carousel **/
+.carousel__block
+   display: flex
+   justify-content: center
+   align-items: center
+   flex-direction: column
+   text-align: center
+
+.carousel__img, .carousel__photo
+   margin-top: 10px
+   margin-bottom: 50px
+
+.carousel__photo img
+   border-radius: 50%
+   width: 76px
+   height: 76px
+
+.carousel__text
+   font-family: $rufina
+   font-size: 18px
+   font-weight: 400
+   line-height: 35px
+   color: $black_color
+   margin-bottom: 50px
+   padding: 0 40px
+
+.carousel__name
+   font-family: $rufina
+   font-size: 22px
+   font-weight: 600
+   color: $black_color
+   margin-bottom: 20px
+
+   span
+      font-size: 15px
+      font-weight: 300
+
+/** Team **/
+.team__inner
+	display: flex  
+       
+	justify-content: space-between 
+
+   margin: 0 -15px
+
+
+.team__item  
+   position: relative 
+   width: 33%
+   padding: 0 15px 
+   margin-bottom: 80px 
+
+   &:hover .social__icon
+      margin-top: 10px
+      opacity: 1
+      visibility: visible      
+   
+   &:hover .team__about
+      box-shadow: 0 0 25px 2px #787478
+      
+/** .team__first **/
+
+
+.team__photo
+   display: block
+   max-width: 100%
+   height: auto
+
+.team__about
+   position: absolute
+   bottom: -50px
+   left: 50%
+   z-index: 1
+   width: 88%
+   max-width: calc( 100% - 60px )
+   
+   transform: translateX(-50%)
+
+   background-color: #fff
+   transition: box-shadow .5s linear
+   
+   text-align: center
+   margin: -50px auto 0
+   padding: 20px
+
+.team__name
+   font-family: $rufina
+   font-size: 22px
+   font-weight: 700
+   color: $black_color  
+
+.team__position   
+   font-size: 15px
+   font-weight: 300
+   
+.social__icon
+   font-size: 18px
+   margin-top: -30px
+   opacity: 0
+   visibility: hidden
+
+   transition: visibility .2s linear, opacity .2s linear, margin-top .3s linear
+
+   a
+      display: inline-block
+      width: 30px
+      height: 30px
+      text-decoration: none
+      color: $black_color
+      border: 1px solid $black_color
+      border-radius: 50%
+      line-height: 170%
+      text-align: center
+      
+      transition: color .5s linear, background-color .5s linear      
+
+      &:hover
+         color: #fff
+         background-color: $red_color
+
+      &:not(:last-child)
+         margin-right: 15px
+
+/** Form **/
+.form__inner
+   display: flex 
+  
+   align-items: center  
+
+.form__img   
+   width: 40%  
+
+.form__photo
+   display: block
+   max-width: 100%
+   height: auto
+
+.form__about
+   width: 60%
+   padding-left: 30px
+
+.form__about
+   
+   form
+      position: relative
+      max-width: 650px 
+      margin: 0 auto 
+
+.form__field
+   display: flex
+   justify-content: space-between
+   width: 100%
+
+   .half--width
+      width: 49%
+
+   input      
+      width: 100%
+      background-color: transparent
+      border: none
+      outline: none
+      border-bottom: 1px solid #d4d3d3
+      padding: 10px 10px 10px
+      margin-bottom: 30px
+
+      color: $form_color
+      font-size: 12px
+      font-weight: 400
+      font-family: $roboto
+      text-transform: uppercase
+
+   textarea
+      border: 1px solid #d4d3d3
+      width: 100%
+      background-color: transparent
+      resize: none
+      
+      padding: 10px 10px 10px
+      margin-bottom: 30px
+
+      color: black
+      font-size: 12px
+      font-weight: 400
+      font-family: $roboto
+      text-transform: uppercase
+
+/** Footer **/
+.footer__inner
+   display: flex
+   flex-direction: column
+   justify-content: center
+   align-items: center
+
+.footer__menu
+   display: flex
+
+.footer__social
+   font-size: 20px
+   color: $black_color 
+   
+   a
+      text-decoration: none
+      
+
+      &:not(:last-child)
+         margin-right: 20px
+
+      i
+         transition: color .3s linear
+         color: $black_color
+         &:hover         
+            color: $red_color
+
+.footer__logo, .footer__menu, .footer__social, .footer__copyright
+   margin-bottom: 30px
+
+.footer__copyright
+   font-family: $roboto
+   font-size: 13px
+   text-transform: uppercase
+
+   span
+      color: $red_color
+
+
+/** Media **/
+//Reset
+@import media_1300
+@import media_1070
+@import media_913
+@import media_678
+@import media_525
+@import media_420
